@@ -13,7 +13,6 @@ export function initHeader() {
   
   header.innerHTML = `
     <div class="header__container">
-      <a href="/index.html" class="header__logo">🎿 Лыжный поход</a>
       <nav class="header__nav">
         <a href="/index.html" class="header__link">Главная</a>
         <a href="/pages/spravochnye-svedeniya.html" class="header__link">Отчёт</a>
