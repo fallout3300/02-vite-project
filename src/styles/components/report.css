@@ -1,0 +1,165 @@
+/* Стили для контента отчёта */
+.report-content {
+  padding: var(--spacing-xl) 0;
+}
+
+.report-content h1 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: var(--spacing-md);
+}
+
+.report-content h2 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-text);
+  margin: var(--spacing-xl) 0 var(--spacing-md);
+  padding-left: var(--spacing-md);
+  border-left: 4px solid var(--color-primary);
+}
+
+.report-content h3 {
+  font-size: var(--font-size-xl);
+  color: var(--color-text);
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.report-content p {
+  margin: var(--spacing-md) 0;
+  line-height: 1.8;
+}
+
+.report-content ul,
+.report-content ol {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-xl);
+}
+
+.report-content li {
+  margin: var(--spacing-sm) 0;
+  line-height: 1.7;
+}
+
+.report-content ul {
+  list-style-type: disc;
+}
+
+.report-content ul ul {
+  list-style-type: circle;
+}
+
+/* Блоки с важной информацией */
+.info-block {
+  background-color: var(--color-bg-alt);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-lg) 0;
+  border-left: 4px solid var(--color-accent);
+}
+
+.info-block-title {
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Дневниковые записи */
+.day-entry {
+  background-color: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.day-entry h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Фотографии в тексте */
+.photo-reference {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  margin: 0 var(--spacing-xs);
+}
+
+/* Таблицы */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--spacing-lg) 0;
+  overflow-x: auto;
+  display: block;
+}
+
+.report-table thead {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.report-table th,
+.report-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border: 1px solid var(--color-border);
+}
+
+.report-table tbody tr:nth-child(even) {
+  background-color: var(--color-bg-alt);
+}
+
+.report-table tbody tr:hover {
+  background-color: var(--color-surface);
+}
+
+/* Цитаты */
+.report-quote {
+  font-style: italic;
+  padding: var(--spacing-lg);
+  border-left: 4px solid var(--color-secondary);
+  margin: var(--spacing-lg) 0;
+  background-color: var(--color-bg-alt);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Картинки в контенте */
+.content-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  margin: var(--spacing-lg) 0;
+  box-shadow: var(--shadow-md);
+}
+
+.image-caption {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+}
+
+/* Адаптивность для контента */
+@media (max-width: 768px) {
+  .report-content h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .report-content h2 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .report-table {
+    font-size: var(--font-size-sm);
+  }
+  
+  .report-table th,
+  .report-table td {
+    padding: var(--spacing-sm);
+  }
+}

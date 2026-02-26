@@ -13,11 +13,12 @@ export function initHeader() {
   
   header.innerHTML = `
     <div class="header__container">
-      <a href="/" class="header__logo">MyProject</a>
+      <a href="/index.html" class="header__logo">🎿 Лыжный поход</a>
       <nav class="header__nav">
-        <a href="/" class="header__link">Главная</a>
-        <a href="/pages/about.html" class="header__link">О проекте</a>
-        <a href="#" class="header__link">Контакты</a>
+        <a href="/index.html" class="header__link">Главная</a>
+        <a href="/pages/spravochnye-svedeniya.html" class="header__link">Отчёт</a>
+        <a href="/pages/grafik-dvizheniya.html" class="header__link">График</a>
+        <a href="/pages/prilozhenie-2.html" class="header__link">О Карелии</a>
       </nav>
     </div>
   `

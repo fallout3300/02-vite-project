@@ -3,6 +3,9 @@
 @import './components/header.css';
 @import './components/footer.css';
 @import './components/cards.css';
+@import './components/navigation.css';
+@import './components/report.css';
+@import './components/gallery.css';
 
 /* Глобальные стили */
 body {
@@ -24,30 +27,107 @@ body {
   width: 100%;
 }
 
-/* Hero секция */
-.hero {
+/* Титульная страница */
+.title-page {
   text-align: center;
   padding: var(--spacing-2xl) 0;
+  margin-bottom: var(--spacing-2xl);
+  border-bottom: 2px solid var(--color-primary);
 }
 
-.hero h1 {
+.title-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.org-small {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin: var(--spacing-xs) 0;
+}
+
+.report-title {
   font-size: var(--font-size-4xl);
   color: var(--color-primary);
-  margin-bottom: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.hero p {
+.report-subtitle {
   font-size: var(--font-size-xl);
-  color: var(--color-text-muted);
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xl);
 }
 
-/* Секция features */
-.features {
+.report-info {
+  background-color: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-xl) auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.report-info p {
+  margin: var(--spacing-sm) 0;
+}
+
+.approval-block {
+  background-color: var(--color-bg-alt);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin: var(--spacing-xl) auto;
+  max-width: 700px;
+  text-align: left;
+  border-left: 4px solid var(--color-primary);
+}
+
+.approval-block p {
+  margin: var(--spacing-sm) 0;
+}
+
+.signature {
+  margin-top: var(--spacing-lg);
+  font-style: italic;
+}
+
+.city-year {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-xl);
+}
+
+/* Вступление */
+.intro {
+  padding: var(--spacing-2xl) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.intro h2 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.intro p {
+  margin: var(--spacing-md) 0;
+  font-size: var(--font-size-lg);
+}
+
+/* Предпросмотр галереи */
+.gallery-preview {
   padding: var(--spacing-2xl) 0;
 }
 
-.features h2 {
-  text-align: center;
+.gallery-preview h2 {
   font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.gallery-note {
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-md);
 }

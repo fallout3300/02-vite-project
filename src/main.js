@@ -1,7 +1,8 @@
 import './styles/main.css'
 import { initHeader } from './js/modules/header.js'
 import { initFooter } from './js/modules/footer.js'
-import { initCards } from './js/components/cards.js'
+import { initGallery } from './js/components/gallery.js'
+import { initNavigation } from './js/components/navigation.js'
 
 // Инициализация приложения
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,5 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   initHeader()
   initFooter()
-  initCards()
+  initGallery()
+  initNavigation()
 })

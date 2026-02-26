@@ -1,0 +1,129 @@
+/* Галерея изображений */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  background-color: var(--color-surface);
+  transition: transform var(--transition-base);
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Модальное окно для просмотра */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: var(--z-modal);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.modal-caption {
+  color: white;
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  font-size: var(--font-size-4xl);
+  color: white;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.modal-close:hover {
+  color: var(--color-primary);
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--font-size-4xl);
+  color: white;
+  cursor: pointer;
+  padding: var(--spacing-md);
+  transition: color var(--transition-fast);
+}
+
+.modal-nav:hover {
+  color: var(--color-primary);
+}
+
+.modal-prev {
+  left: var(--spacing-md);
+}
+
+.modal-next {
+  right: var(--spacing-md);
+}
+
+/* Полная галерея на странице */
+.gallery-full {
+  padding: var(--spacing-xl) 0;
+}
+
+.gallery-full h2 {
+  font-size: var(--font-size-3xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.gallery-full .gallery-grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-sm);
+  }
+  
+  .modal-nav {
+    font-size: var(--font-size-3xl);
+    padding: var(--spacing-sm);
+  }
+}

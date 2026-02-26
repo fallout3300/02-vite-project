@@ -15,11 +15,8 @@ export function initFooter() {
   
   footer.innerHTML = `
     <div class="footer__container">
-      <p class="footer__text">© ${currentYear} MyProject. Все права защищены.</p>
-      <div class="footer__links">
-        <a href="#" class="footer__link">Политика конфиденциальности</a>
-        <a href="#" class="footer__link">Условия использования</a>
-      </div>
+      <p class="footer__text">© ${currentYear} Отчёт о лыжном походе | ГБНОУ «Балтийский берег»</p>
+      <p class="footer__text">Руководитель: Акилов Александр Юрьевич</p>
     </div>
   `
   
