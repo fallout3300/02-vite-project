@@ -236,3 +236,62 @@
 .accordion-content ol:last-child {
   margin-bottom: 0;
 }
+
+/* Details/Summary для дней */
+.details.day {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-lg);
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.details.day[open] {
+  box-shadow: var(--shadow-md);
+}
+
+.details__title {
+  padding: var(--spacing-lg);
+  background: var(--color-surface);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  transition: all var(--transition-fast);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details__title:hover {
+  background: var(--color-border);
+}
+
+.details__title::-webkit-details-marker {
+  display: none;
+}
+
+.details__title::after {
+  content: '▼';
+  font-size: var(--font-size-base);
+  transition: transform var(--transition-base);
+}
+
+.details.day[open] .details__title::after {
+  transform: rotate(180deg);
+}
+
+.details__content {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.details__content p {
+  margin: var(--spacing-md) 0;
+  line-height: 1.7;
+}
+
+.details__content .report-quote {
+  margin: var(--spacing-lg) 0;
+}
