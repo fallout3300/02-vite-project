@@ -8,6 +8,7 @@
 @import './components/sidebar.css';
 @import './components/charts.css';
 @import './components/table.css';
+@import './components/details.css';
 
 /* Глобальные стили */
 body {
