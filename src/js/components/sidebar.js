@@ -20,7 +20,13 @@ const navItems = [
  * Инициализация боковой навигации
  */
 export function initSidebar() {
-  renderSidebar()
+  const container = document.getElementById('sidebar-container')
+  if (!container) {
+    console.warn('Sidebar container not found')
+    return
+  }
+  
+  renderSidebar(container)
   setupToggle()
   highlightCurrentPage()
   
@@ -30,7 +36,7 @@ export function initSidebar() {
 /**
  * Рендер боковой панели
  */
-function renderSidebar() {
+function renderSidebar(container) {
   const sidebar = document.createElement('aside')
   sidebar.className = 'sidebar'
   sidebar.id = 'sidebar'
@@ -64,7 +70,7 @@ function renderSidebar() {
     </div>
   `
   
-  document.body.insertBefore(sidebar, document.body.firstChild)
+  container.appendChild(sidebar)
   
   // Добавляем overlay для мобильной версии
   const overlay = document.createElement('div')
