@@ -43,7 +43,7 @@ function renderSidebar(container) {
   
   sidebar.innerHTML = `
     <div class="sidebar-header">
-      <a href="/index.html" class="sidebar-logo">
+      <a href="./index.html" class="sidebar-logo">
         <span class="logo-icon">🎿</span>
         <span class="logo-text">Лыжный поход</span>
       </a>
