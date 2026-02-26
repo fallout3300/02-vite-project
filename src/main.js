@@ -3,6 +3,7 @@ import { initFooter } from './js/modules/footer.js'
 import { initGallery } from './js/components/gallery.js'
 import { initNavigation } from './js/components/navigation.js'
 import { initSidebar } from './js/components/sidebar.js'
+import { initCharts } from './js/components/charts.js'
 
 // Инициализация приложения
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initFooter()
   initGallery()
   initNavigation()
+  initCharts()
 })

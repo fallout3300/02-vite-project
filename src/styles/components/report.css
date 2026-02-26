@@ -1,6 +1,6 @@
 /* Стили для контента отчёта */
 .report-content {
-  padding: var(--spacing-xl) 0;
+  padding: 0;
 }
 
 .report-content h1 {

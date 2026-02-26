@@ -1,0 +1,59 @@
+/* Контейнер графиков */
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-2xl);
+  margin: var(--spacing-2xl) 0;
+}
+
+@media (min-width: 1024px) {
+  .charts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.chart-wrapper {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Стили d3 элементов */
+.grid line {
+  stroke: var(--color-border);
+  stroke-dasharray: 4,4;
+}
+
+.x-axis line,
+.y-axis line {
+  stroke: var(--color-border);
+}
+
+.x-axis path,
+.y-axis path {
+  stroke: var(--color-text);
+}
+
+.line {
+  transition: opacity var(--transition-fast);
+}
+
+.dot {
+  cursor: pointer;
+  transition: r var(--transition-fast);
+}
+
+.dot:hover {
+  r: 8;
+}
+
+.area {
+  opacity: 0.8;
+}
+
+/* Адаптивность для SVG */
+svg {
+  overflow: visible;
+}

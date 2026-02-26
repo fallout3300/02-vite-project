@@ -6,6 +6,7 @@
 @import './components/report.css';
 @import './components/gallery.css';
 @import './components/sidebar.css';
+@import './components/charts.css';
 
 /* Глобальные стили */
 body {

@@ -24,7 +24,7 @@
 
 .nav-list a {
   display: block;
-  padding: var(--spacing-md);
+  padding: var(--spacing-xs);
   background-color: var(--color-bg);
   border-radius: var(--radius-md);
   color: var(--color-text);
@@ -36,7 +36,7 @@
 .nav-list a:hover {
   background-color: var(--color-primary);
   color: white;
-  transform: translateX(8px);
+  /* transform: translateX(8px); */
   border-color: var(--color-primary);
 }
 
@@ -48,6 +48,7 @@
   margin-bottom: var(--spacing-lg);
   font-size: var(--font-size-sm);
   flex-wrap: wrap;
+  display: none;
 }
 
 .breadcrumbs a {

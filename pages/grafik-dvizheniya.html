@@ -23,7 +23,20 @@
         <p><strong>Суммарный перепад высот:</strong> 2144 м</p>
       </div>
 
-      <h2>Таблица графика движения</h2>
+      <!-- Графики на d3.js -->
+      <section class="charts-section">
+        <h2>Статистика по дням</h2>
+        <div class="charts-container" id="charts-container">
+          <div class="chart-wrapper">
+            <div id="distance-chart"></div>
+          </div>
+          <div class="chart-wrapper">
+            <div id="chv-chart"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Страница с таблицей -->
       <figure class="photo-item" style="margin: var(--spacing-xl) 0;">
         <img src="/files/images/f28f62811c7cb793eaea6557085349e8-50.jpg" alt="График движения таблица" loading="lazy">
         <figcaption>Полная таблица графика движения по дням</figcaption>

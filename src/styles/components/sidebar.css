@@ -91,7 +91,7 @@
 .nav-link:hover {
   background: var(--color-surface);
   color: var(--color-primary);
-  transform: translateX(4px);
+  /* transform: translateX(4px); */
 }
 
 .nav-link.active {
@@ -166,6 +166,10 @@
 @media (min-width: 1024px) {
   .sidebar {
     left: 0;
+  }
+  
+  .sidebar-close {
+    display: none;
   }
   
   .sidebar-toggle {
