@@ -17,8 +17,8 @@ export function initHeader() {
       <nav class="header__nav">
         <a href="/index.html" class="header__link">Главная</a>
         <a href="/pages/spravochnye-svedeniya.html" class="header__link">Отчёт</a>
+        <a href="/pages/tehniicheskoe-opisanie.html" class="header__link">Маршрут</a>
         <a href="/pages/grafik-dvizheniya.html" class="header__link">График</a>
-        <a href="/pages/prilozhenie-2.html" class="header__link">О Карелии</a>
       </nav>
     </div>
   `

@@ -27,3 +27,12 @@ Thumbs.db
 # Временные файлы
 *.tmp
 *.temp
+
+# Большие файлы изображений (оригиналы из docx)
+files/images/*.jpg
+
+# Изображения в assets (кроме favicon.svg)
+src/assets/images/*.jpg
+src/assets/images/*.jpeg
+src/assets/images/*.png
+src/assets/images/*.gif
