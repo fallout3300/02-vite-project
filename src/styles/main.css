@@ -1,0 +1,53 @@
+@import './reset.css';
+@import './variables.css';
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/cards.css';
+
+/* Глобальные стили */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  width: 100%;
+}
+
+/* Hero секция */
+.hero {
+  text-align: center;
+  padding: var(--spacing-2xl) 0;
+}
+
+.hero h1 {
+  font-size: var(--font-size-4xl);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero p {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+}
+
+/* Секция features */
+.features {
+  padding: var(--spacing-2xl) 0;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-xl);
+}
