@@ -25,3 +25,18 @@
 .table tbody tr:hover {
     background-color: var(--color-surface);
 }
+
+.all-space {
+    width: 100%;                /* Таблица на всю ширину контейнера */
+    table-layout: fixed;        /* Фиксированный алгоритм разметки */
+    border-collapse: collapse;  /* Убирает двойные границы */
+
+    th, td {
+        width: 1%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        /* Текст не будет расширять колонку */
+        overflow: hidden;           
+        text-overflow: ellipsis;
+    }
+}

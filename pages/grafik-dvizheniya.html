@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
   <link rel="icon" type="image/svg+xml" href="/src/assets/images/favicon.svg">
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
+
 <body>
   <aside id="sidebar-container"></aside>
 
   <main class="main">
     <div class="breadcrumbs" id="breadcrumbs"></div>
-    
+
     <article class="report-content">
       <h1>График движения</h1>
-      
+
+      <h2>Общая информация</h2>
       <div class="info-block">
-        <p class="info-block-title">📊 Общая информация</p>
         <p><strong>Общая протяжённость:</strong> 147,92 км</p>
         <p><strong>Чистое ходовое время:</strong> 33 ч 21 мин</p>
         <p><strong>Суммарный перепад высот:</strong> 2144 м</p>
@@ -37,6 +39,8 @@
         <img src="/files/images/f28f62811c7cb793eaea6557085349e8-50.jpg" alt="График движения таблица" loading="lazy">
         <figcaption>Полная таблица графика движения по дням</figcaption>
       </figure> -->
+
+
 
       <h2>Детальный график</h2>
       <table class="report-table">
@@ -58,14 +62,14 @@
             <td>Санкт-Петербург – Питкяранта</td>
             <td>0</td>
             <td></td>
-            <td></td>
+            <td rowspan="2">+91 / -43</td>
             <td rowspan="2">-10°С</td>
           </tr>
           <tr>
             <td>Питкяранта – ручей Ристиноя</td>
             <td>9,45</td>
             <td>2 ч</td>
-            <td>+91 / -43</td>
+            <td></td>
             <!-- <td>-10°С</td> -->
           </tr>
           <tr>
@@ -137,14 +141,14 @@
             <td>Мраморный карьер – Рускеала</td>
             <td>3,27</td>
             <td>43 мин</td>
-            <td>+13 / -24</td>
+            <td rowspan="2">+13 / -24</td>
             <td rowspan="2">-12°С</td>
           </tr>
           <tr>
             <td>Рускеала – Санкт-Петербург</td>
             <td>3,27</td>
             <td>43 мин</td>
-            <td>+13 / -24</td>
+            <td></td>
           </tr>
           <tr>
             <td colspan="3"><strong>Итого:</strong></td>
@@ -156,7 +160,7 @@
         </tbody>
       </table>
 
-      
+
       <!-- Графики на d3.js -->
       <section class="charts-section">
         <h2>Статистика по дням</h2>
@@ -173,6 +177,12 @@
         </div>
       </section>
 
+      <!-- Оригинальная страница -->
+      <details class="details" style="margin: var(--spacing-xl) 0;">
+        <summary class="details__title">Оригинальная страница отчёта с таблицей графика движения</summary>
+        <div class="detaild__content"><img src="/files/images/f28f62811c7cb793eaea6557085349e8-50.jpg"
+            alt="График движения таблица" loading="lazy"></div>
+      </details>
 
     </article>
 
@@ -183,4 +193,5 @@
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

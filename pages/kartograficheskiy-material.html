@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,15 @@
   <link rel="icon" type="image/svg+xml" href="/src/assets/images/favicon.svg">
   <link rel="stylesheet" href="/src/styles/main.css">
 </head>
+
 <body>
   <aside id="sidebar-container"></aside>
 
   <main class="main">
     <div class="breadcrumbs" id="breadcrumbs"></div>
-    
+
     <article class="report-content">
       <h1>Картографический материал</h1>
-      
-      <div class="info-block">
-        <p class="info-block-title">🗺️ Используемые карты</p>
-        <p>Для прохождения маршрута использовались следующие картографические материалы:</p>
-      </div>
 
       <h2>Расположение Карелии</h2>
       <div class="photo-grid">
@@ -33,13 +30,9 @@
       <div class="photo-grid">
         <figure class="photo-item">
           <!-- <img src="/files/images/f28f62811c7cb793eaea6557085349e8-8.jpg" alt="Обзорная карта маршрута" loading="lazy"> -->
-          <iframe 
-          src="https://nakarte.me/#m=9/61.77559/31.49258&l=Czt/Wp&nktl=ZUqp1OfsC8Isu_TMHQzOvA"
-          width="100%"
-          style="border:0; aspect-ratio: 2/1;" 
-          allowfullscreen="true" 
-          loading="lazy">
-        </iframe>
+          <iframe src="https://nakarte.me/#m=9/61.77559/31.49258&l=Czt/Wp&nktl=ZUqp1OfsC8Isu_TMHQzOvA" width="100%"
+            style="border:0; aspect-ratio: 2/1;" allowfullscreen="true" loading="lazy">
+          </iframe>
           <figcaption>Обзорная карта маршрута с отметками по дням</figcaption>
         </figure>
       </div>
@@ -61,8 +54,10 @@
       </ul>
 
       <div class="info-block">
-        <p><strong>Важно:</strong> Рекомендуется иметь как бумажные, так и электронные версии карт. Бумажные карты не зависят от заряда батареи, а электронные позволяют точно определить местоположение через GPS.</p>
+        <p><strong>Важно:</strong> Рекомендуется иметь как бумажные, так и электронные версии карт. Бумажные карты не
+          зависят от заряда батареи, а электронные позволяют точно определить местоположение через GPS.</p>
       </div>
+
     </article>
 
     <nav class="page-navigation" id="page-navigation"></nav>
@@ -72,4 +67,5 @@
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

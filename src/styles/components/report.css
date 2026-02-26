@@ -202,14 +202,14 @@
   color: white;
 }
 
-.accordion-icon {
+/* .accordion-icon {
   font-size: var(--font-size-xl);
   transition: transform var(--transition-base);
 }
 
 .accordion-header.active .accordion-icon {
   transform: rotate(180deg);
-}
+} */
 
 .accordion-content {
   max-height: 0;
@@ -276,10 +276,6 @@
   content: '▼';
   font-size: var(--font-size-base);
   transition: transform var(--transition-base);
-}
-
-.details.day[open] .details__title::after {
-  transform: rotate(180deg);
 }
 
 .details__content {
