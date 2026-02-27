@@ -1,4 +1,4 @@
-import './styles/main.css'
+// import './styles/main.css'
 import { initFooter } from './js/modules/footer.js'
 import { initGallery } from './js/components/gallery.js'
 import { initNavigation } from './js/components/navigation.js'
