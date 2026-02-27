@@ -155,6 +155,7 @@
   font-size: var(--font-size-2xl);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-fast);
+  opacity: 60%;
 }
 
 .sidebar-toggle:hover {
