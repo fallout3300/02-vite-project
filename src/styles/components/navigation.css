@@ -71,6 +71,7 @@
 /* Навигация между страницами */
 .page-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: var(--spacing-2xl);
   padding-top: var(--spacing-xl);

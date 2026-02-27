@@ -12,7 +12,7 @@
 
 .details.day {
     background: var(--color-surface);
-    padding: 24px;
+    padding: 0;
     border-radius: var(--radius-lg);
     margin-top: var(--spacing-xl)
 }

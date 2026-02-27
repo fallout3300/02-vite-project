@@ -69,7 +69,7 @@ function renderTemperatureChart(container) {
   const svg = d3.select('#temperature-chart')
     .append('svg')
     .attr('width', '100%')
-    .attr('height', height)
+    // .attr('height', height)
     .attr('viewBox', `0 0 ${width} ${height}`)
     .attr('preserveAspectRatio', 'xMidYMid meet')
   
@@ -205,7 +205,7 @@ function renderDistanceChart(container) {
   const svg = d3.select('#distance-chart')
     .append('svg')
     .attr('width', '100%')
-    .attr('height', height)
+    // .attr('height', height)
     .attr('viewBox', `0 0 ${width} ${height}`)
     .attr('preserveAspectRatio', 'xMidYMid meet')
   
@@ -344,7 +344,7 @@ function renderChvChart(container) {
   const svg = d3.select('#chv-chart')
     .append('svg')
     .attr('width', '100%')
-    .attr('height', height)
+    // .attr('height', height)
     .attr('viewBox', `0 0 ${width} ${height}`)
     .attr('preserveAspectRatio', 'xMidYMid meet')
   
