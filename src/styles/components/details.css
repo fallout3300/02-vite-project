@@ -83,6 +83,10 @@
     padding: 0 32px;
     font-size: 18px;
     margin-bottom: -60px;
+
+    @media (width <= 375px) {
+        padding: 0 0;
+    }
 }
 
 .details__content p:last-child {

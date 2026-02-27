@@ -27,6 +27,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--spacing-xl) var(--spacing-md);
+
+  @media (width <= 375px) {
+    padding-inline: 0;
+  }
+  
   width: 100%;
   transition: margin-left var(--transition-base);
 }
