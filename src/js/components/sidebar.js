@@ -56,7 +56,7 @@ function renderSidebar(container) {
       <ul class="nav-list">
         ${navItems.map(item => `
           <li class="nav-item">
-            <a href="${item.href}" class="nav-link">
+            <a href="/02-vite-project${item.href}" class="nav-link">
               <span class="nav-icon">${item.icon}</span>
               <span class="nav-label">${item.label}</span>
             </a>
