@@ -4,7 +4,7 @@
  */
 
 const navItems = [
-  { href: '/index.html', icon: '🏠', label: 'Главная' },
+  { href: '/pages/index.html', icon: '🏠', label: 'Главная' },
   { href: '/pages/spravochnye-svedeniya.html', icon: '📋', label: 'Справочные сведения' },
   { href: '/pages/sostav-gruppy.html', icon: '👥', label: 'Состав группы' },
   { href: '/pages/organizatsiya-pohoda.html', icon: '🎒', label: 'Организация похода' },
@@ -137,7 +137,10 @@ function highlightCurrentPage() {
   
   navLinks.forEach(link => {
     const href = link.getAttribute('href')
-    if (href === currentPath || (currentPath === '/' && href === '/index.html')) {
+    // console.log(currentPath)
+    // console.log(href)
+    // debugger
+    if (href === currentPath || ((currentPath === '/02-vite-project/' || currentPath === '/02-vite-project/index.html') && href === '/02-vite-project/pages/index.html')) {
       link.classList.add('active')
     }
   })

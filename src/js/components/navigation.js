@@ -98,8 +98,17 @@ function renderPageNavigation() {
   const currentPage = getCurrentPage()
   if (!currentPage) return
   
-  const prevPage = currentPage.prev ? reportPages.find(p => p.id === currentPage.prev) : null
-  const nextPage = currentPage.next ? reportPages.find(p => p.id === currentPage.next) : null
+  let prevPage = currentPage.prev ? reportPages.find(p => p.id === currentPage.prev) : null
+  let nextPage = currentPage.next ? reportPages.find(p => p.id === currentPage.next) : null
+
+  nextPage ??= {
+    id: 'index',
+    title: 'На главную'
+  }
+  prevPage ??= {
+    id: 'index',
+    title: 'На главную'
+  }
   
   navContainer.innerHTML = `
     ${prevPage 
