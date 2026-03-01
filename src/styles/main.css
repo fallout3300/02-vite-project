@@ -214,8 +214,45 @@ body {
   margin: var(--spacing-xl) 0;
 }
 
+.anchor {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
 .photo-item {
   margin: 0;
+  scroll-margin-top: 30vh; 
+  transition: border .3s ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Когда якорь работает */
+.photo-item:target img {
+  outline: var(--color-primary) 4px solid;
+  outline-offset: 5px;
+  animation: anchorAnimation 20s ease forwards;
+}
+
+/* .details.p0 {
+  & > .details__title {
+    margin-bottom: 32px
+  }
+  & > .details__content {
+    padding: 0;
+  }
+  padding-bottom: 32px;
+} */
+
+@keyframes anchorAnimation {
+  from {
+    outline-color: var(--color-primary);
+  }
+  to {
+    /* outline-color: color-mix(in srgb, var(--color-primary) 10%, transparent 1%); */
+    outline-color: #0000;
+  }
 }
 
 .photo-item img {
