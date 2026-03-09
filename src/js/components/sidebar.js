@@ -4,7 +4,7 @@
  */
 
 const navItems = [
-  { href: '/pages/index.html', icon: '🏠', label: 'Главная' },
+  { href: '/', icon: '🏠', label: 'Главная' },
   { href: '/pages/spravochnye-svedeniya.html', icon: '📋', label: 'Справочные сведения' },
   { href: '/pages/sostav-gruppy.html', icon: '👥', label: 'Состав группы' },
   { href: '/pages/organizatsiya-pohoda.html', icon: '🎒', label: 'Организация похода' },
