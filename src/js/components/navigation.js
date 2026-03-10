@@ -112,14 +112,14 @@ function renderPageNavigation() {
   
   navContainer.innerHTML = `
     ${prevPage 
-      ? `<a href="${prevPage.id === '/' ? '/' : './' + prevPage.id + '.html'}" class="page-nav-btn">
+      ? `<a href="${prevPage.id === '/' ? '/02-vite-project/' : './' + prevPage.id + '.html'}" class="page-nav-btn">
            <span class="arrow">←</span> ${prevPage.title}
          </a>`
       : '<span class="page-nav-btn disabled"><span class="arrow">←</span> Назад</span>'
     }
     
     ${nextPage
-      ? `<a href="${nextPage.id === '/' ? '/' : './' + nextPage.id + '.html'}" class="page-nav-btn">
+      ? `<a href="${nextPage.id === '/' ? '/02-vite-project/' : './' + nextPage.id + '.html'}" class="page-nav-btn">
            ${nextPage.title} <span class="arrow">→</span>
          </a>`
       : '<span class="page-nav-btn disabled">Вперёд <span class="arrow">→</span></span>'
