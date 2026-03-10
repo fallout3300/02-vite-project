@@ -217,33 +217,35 @@ body {
 .anchor {
   color: var(--color-primary);
   font-weight: 600;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .photo-item {
   margin: 0;
-  scroll-margin-top: 30vh; 
   transition: border .3s ease;
+  /* padding-bottom: 1rem; */
+  background-color: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
 }
 html {
   scroll-behavior: smooth;
 }
 
 /* Когда якорь работает */
-.photo-item:target img {
+*:target {
+  border-radius: var(--radius-md);
   outline: var(--color-primary) 4px solid;
   outline-offset: 5px;
   animation: anchorAnimation 20s ease forwards;
+  scroll-margin-top: 30vh; 
+  /* scroll-margin-top: 45vh; */
 }
-
-/* .details.p0 {
-  & > .details__title {
-    margin-bottom: 32px
-  }
-  & > .details__content {
-    padding: 0;
-  }
-  padding-bottom: 32px;
-} */
 
 @keyframes anchorAnimation {
   from {
@@ -257,15 +259,13 @@ html {
 
 .photo-item img {
   width: 100%;
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
 }
 
 .photo-item figcaption {
   text-align: center;
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
-  margin-top: var(--spacing-sm);
+  margin-block: var(--spacing-sm);
 }
 
 .title-header {

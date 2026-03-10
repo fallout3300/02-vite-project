@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Техническое описание маршрута <br> Отчёт</title>
   <link rel="icon" type="image/svg+xml" href="/02-vite-project/assets/favicon-CG46B0BS.svg">
-  <script type="module" crossorigin src="/02-vite-project/assets/main-DjEOGFDd.js"></script>
-  <link rel="stylesheet" crossorigin href="/02-vite-project/assets/main-COrLuAZX.css">
+  <script type="module" crossorigin src="/02-vite-project/assets/main-8oKlHlav.js"></script>
+  <link rel="stylesheet" crossorigin href="/02-vite-project/assets/main-BH1NmRSC.css">
 </head>
 
 <body>
@@ -193,12 +193,12 @@
           <p>К 18:00 ставим лагерь между двумя озерами – Руокоярви и Руокоярвенпя, воду берем из последнего. Подход к
             озеру заболочен, ходить надо на лыжах, иначе проваливаешься по колено.</p>
 
-            <details class="details">
-              <summary class="details__title">Карта</summary>
-              <div class="details__content">
-                <img src="/02-vite-project/assets/image31-CdYkiX9h.jpg" alt="">
-              </div>
-            </details>
+          <details class="details">
+            <summary class="details__title">Карта</summary>
+            <div class="details__content">
+              <img src="/02-vite-project/assets/image31-CdYkiX9h.jpg" alt="">
+            </div>
+          </details>
 
           <div class="photo-grid">
             <figure class="photo-item">
@@ -286,12 +286,12 @@
             сушины. Воду брали из реки. Место ночевки было рядом с дорогой, не отмеченной на карте, рядом с постройками
             – есть мини пасека, теплицы и большой жилой дом, но никого из людей не было.</p>
 
-            <details class="details">
-              <summary class="details__title">Карта</summary>
-              <div class="details__content">
-                <img src="/02-vite-project/assets/image44-BM1MW7XS.jpeg" alt="" >
-              </div>
-            </details>
+          <details class="details">
+            <summary class="details__title">Карта</summary>
+            <div class="details__content">
+              <img src="/02-vite-project/assets/image44-BM1MW7XS.jpeg" alt="">
+            </div>
+          </details>
 
           <div class="photo-grid">
             <figure class="photo-item">
@@ -353,12 +353,12 @@
             дорога огибает болото за озером и уходит в нужную нам сторону. Это очень радует, ведь не надо будет с утра
             идти назад. </p>
 
-            <details class="details">
-              <summary class="details__title">Карта</summary>
-              <div class="details__content">
-                <img src="/02-vite-project/assets/image49-DUaNPGmk.jpeg" alt="">
-              </div>
-            </details>
+          <details class="details">
+            <summary class="details__title">Карта</summary>
+            <div class="details__content">
+              <img src="/02-vite-project/assets/image49-DUaNPGmk.jpeg" alt="">
+            </div>
+          </details>
 
           <p class="report-quote">Пожалуй этот день – самый тяжелый.</p>
 
@@ -511,12 +511,12 @@
             место для шатра. На левом берегу реки, на горке, нашли поляну и сушину. К 17:00 <a href="#photo-63"
               class="anchor">лагерь</a> полностью готов. Воду берем из реки.</p>
 
-              <details class="details">
-                <summary class="details__title">Карта</summary>
-                <div class="details__content">
-                  <img src="/02-vite-project/assets/image70-Dd9RmYpI.jpeg" alt="">
-                </div>
-              </details>
+          <details class="details">
+            <summary class="details__title">Карта</summary>
+            <div class="details__content">
+              <img src="/02-vite-project/assets/image70-Dd9RmYpI.jpeg" alt="">
+            </div>
+          </details>
 
           <div class="photo-grid">
             <figure class="photo-item">
@@ -598,7 +598,8 @@
 
           <p>Пешком идем долго, полтора перехода. На 14-ом километре уходим с лесовозной <a href="#photo-68"
               class="anchor">дороги</a> на снегоходный след. Половина надела лыжи, половина идет пешком. Снова на пути
-            <a href="#photo-69" class="anchor">вышки охотников</a>.</p>
+            <a href="#photo-69" class="anchor">вышки охотников</a>.
+          </p>
 
           <p>Четвертый привал делаем в 14:00 на <a href="#photo-70" class="anchor">развилке</a> к Рускеальским
             водопадам. Несмотря на несколько развилок на карте, мы их почти не замечаем, снегоходный след идет прямо к
@@ -608,12 +609,12 @@
             спуститься безопасно к воде на карьере невозможно. Сушину валим в 400-х метрах от лагеря в обратном
             направлении.</p>
 
-            <details class="details">
-              <summary class="details__title">Карта</summary>
-              <div class="details__content">
-                <img src="/02-vite-project/assets/image86-DvT1IkZH.jpeg" alt="">
-              </div>
-            </details>
+          <details class="details">
+            <summary class="details__title">Карта</summary>
+            <div class="details__content">
+              <img src="/02-vite-project/assets/image86-DvT1IkZH.jpeg" alt="">
+            </div>
+          </details>
 
           <div class="photo-grid">
             <figure class="photo-item">
@@ -725,10 +726,27 @@
 
     <script>
       {
-        let id = 1
+        let i = 1
         document.querySelectorAll('.photo-item').forEach(photoItem => {
-          photoItem.setAttribute('id', 'photo-' + String(id).padStart(2, '0'))
-          id += 1
+          const figcaption = photoItem.querySelector('figcaption')
+          // figcaption.innerHTML = `Фото ${id}: <strong>${figcaption.textContent}</strong>`
+
+          {
+            const id = String(i).padStart(2, '0')
+            figcaption.innerHTML = `<strong>${figcaption.textContent}</strong><wbr> - <a>Фото ${id}</a>`
+
+            const anchor = document.querySelector(`a[href="#photo-${id}"]`)
+            const fromPhotoAnchor = figcaption.querySelector('a')
+            // debugger
+            if (anchor && fromPhotoAnchor) {
+              const anchorId = 'anchor-' + id
+              anchor.setAttribute('id', anchorId)
+              fromPhotoAnchor.classList.add('anchor')
+              fromPhotoAnchor.setAttribute('href', '#' + anchorId)
+            }
+            photoItem.setAttribute('id', 'photo-' + id)
+          }
+          i += 1
         })
       }
     </script>

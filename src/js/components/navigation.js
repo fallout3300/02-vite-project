@@ -102,24 +102,24 @@ function renderPageNavigation() {
   let nextPage = currentPage.next ? reportPages.find(p => p.id === currentPage.next) : null
 
   nextPage ??= {
-    id: 'index',
+    id: '/',
     title: 'На главную'
   }
   prevPage ??= {
-    id: 'index',
+    id: '/',
     title: 'На главную'
   }
   
   navContainer.innerHTML = `
     ${prevPage 
-      ? `<a href="./${prevPage.id}.html" class="page-nav-btn">
+      ? `<a href="${prevPage.id === '/' ? '/' : './' + prevPage.id + '.html'}" class="page-nav-btn">
            <span class="arrow">←</span> ${prevPage.title}
          </a>`
       : '<span class="page-nav-btn disabled"><span class="arrow">←</span> Назад</span>'
     }
     
     ${nextPage
-      ? `<a href="./${nextPage.id}.html" class="page-nav-btn">
+      ? `<a href="${nextPage.id === '/' ? '/' : './' + nextPage.id + '.html'}" class="page-nav-btn">
            ${nextPage.title} <span class="arrow">→</span>
          </a>`
       : '<span class="page-nav-btn disabled">Вперёд <span class="arrow">→</span></span>'
